@@ -1,0 +1,8 @@
+#!/bin/bash
+
+git config --global color.ui always
+go install github.com/alexpfx/gosh/dotfile/cmd/cfg@latest
+go install github.com/alexpfx/gosh/dotfile/cmd/repo@latest
+export PATH=$HOME/go/bin/:$PATH
+repo init --help
+cfg --help
