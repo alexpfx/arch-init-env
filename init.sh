@@ -5,3 +5,4 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 source ./essencial
 source ./dotfiles
 
+

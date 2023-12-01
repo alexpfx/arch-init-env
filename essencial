@@ -1,7 +1,7 @@
-#@!/bin/bash
+#!/bin/bash
 
 pacotes=(
-	"fish" "xclip"  "openssh" "xsel"	 		
+	"fish"  "xclip"  "openssh" "xsel"	 		
 	"bspwm" "sxhkd" "rofi" "polybar"
 	"git" "github-cli" "go" "pass" 
 	"micro" "alacritty"
