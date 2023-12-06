@@ -1,9 +1,12 @@
 #!/usr/bin/fish
 
-
-fish_add_path $HOME/ubin
+mkdir -p bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/data/ubin
+fish_add_path $HOME/data/ubin
+cd bin
+fish_add_path (cmd)
+
 fisher install jethrokuan/fzf
 fisher install jethrokuan/z
 fisher install franciscolourenco/done
