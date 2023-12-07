@@ -1,16 +1,6 @@
 #!/bin/bash
 pacotes=(
-	"fisher"
-	"fzf" "z" "xclip" "sshpass" 
-	 "gnome-disk-utility" "arandr"
-	"thunar-volman" "thunar-archive-plugin" "flameshot" "unzip"	
-	"bspwm" "sxhkd" "rofi" "polybar"
-	"ncdu" 
-	"gparted" 
-	"neofetch" "feh" "dunst" "xdotool" "numlockx" "bat"
-	"ncurses"    
-    "gnome-keyring" "dzen2" "opensc" "dmenu" "zenity" "nmap"
-	"dzen2" "dialog" "bat" "htop" "lsof"
+	"meld" "go" "gopls" "nodejs" 
 )
 
 sudo pacman -Sy

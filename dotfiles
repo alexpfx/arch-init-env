@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 
 git config --global color.ui always
 go install github.com/alexpfx/gosh/dotfile/cmd/cfg@latest
