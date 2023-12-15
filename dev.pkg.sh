@@ -1,6 +1,6 @@
 #!/bin/bash
 pacotes=(
-	"meld" "go" "gopls" "nodejs" 
+	"docker" "docker-compose" "docker-buildx" 
 )
 
 sudo pacman -Sy
@@ -12,4 +12,7 @@ do
     sudo pacman -S -q --needed --noconfirm $pk
 done
 
+sudo systemctl enable docker.service
 
+
+sudo usermod -aG docker $USER 

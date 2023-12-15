@@ -1,6 +1,6 @@
 #!/bin/bash
 pacotes=(
-	"meld" "go" "gopls" "nodejs" 
+ "clipmenu" "sysbench"
 )
 
 sudo pacman -Sy
@@ -11,5 +11,7 @@ for pk in "${pacotes[@]}"
 do
     sudo pacman -S -q --needed --noconfirm $pk
 done
+
+
 
 

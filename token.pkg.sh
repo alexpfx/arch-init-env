@@ -1,7 +1,7 @@
 #!/bin/bash
 # https://linuxkamarada.com/pt/2018/04/16/configurando-certificado-digital-no-linux-opensuse/
 pacotes=(
-	 "opensc" "pkcs11-helper" "pcsc-tools"
+	 "opensc" "pkcs11-helper" "pcsc-tools" 
 )
 
 sudo pacman -Sy
