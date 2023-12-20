@@ -7,7 +7,7 @@ git clone https://aur.archlinux.org/yay.git
 rm -rf yay
 
 source ./gitconfig
-#source ./dotfiles
+source ./dotfiles
 
 
 

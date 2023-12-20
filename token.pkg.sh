@@ -18,8 +18,6 @@ done
 
 pacotes=(
 	"ca-certificates-icp_br"  "safesignidentityclient" "sac-core"
-	
-
 	)
 
 
