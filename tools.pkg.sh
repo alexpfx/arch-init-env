@@ -1,12 +1,13 @@
 #!/bin/bash
 
 pacotes=(
-	"fish" "fisher"  "xclip"  "openssh" "xsel"	 		
+	"fish fisher xclip openssh xsel"	 		
 	"bspwm" "sxhkd" "rofi" "polybar"
 	"git" "github-cli" "go" "pass" 
 	"micro" "alacritty" "fzf" "z" "xsel" "gnome-disk-utility" "thunar" "thunar-volman" 
 	"thunar-archive-plugin" "flameshot" "unzip" ""
 	"ttf-jetbrains-mono" 	 
+	"chromium"
     "wmname" "clipmenu" "sysbench"	
 	"xdotool" "fastfetch" "ncdu" "pass" 
 	"dialog" "htop" "lsof" 
