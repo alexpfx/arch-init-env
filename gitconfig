@@ -1,0 +1,25 @@
+#!/bin/bash
+
+show_yad_form() {
+	form=$(yad --title="Digite seus dados" --form --field="user.name" --field="user.email")
+
+	nome=$(echo $form | awk 'BEGIN {FS="|" } { print $1 }')
+	email=$(echo $form | awk 'BEGIN {FS="|" } { print $2 }')
+}
+
+show_cli_form() {
+    read -p "user.name " nome
+    read -p "user.email: " email
+}
+
+
+
+
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+    show_cli_form
+else
+	show_yad_form
+fi
+
+git config --global user.name $nome
+git config --global user.email $email

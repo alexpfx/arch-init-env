@@ -1,8 +1,13 @@
 #!/bin/bash
+sudo pacman -Sy
 
-pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+sudo pacman -S --needed git base-devel yad
+git clone https://aur.archlinux.org/yay.git
+(cd yay && makepkg -si)
+rm -rf yay
 
-source ./essencial
+source ./gitconfig
 #source ./dotfiles
+
 
 
