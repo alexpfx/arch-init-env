@@ -10,7 +10,7 @@ pacotes=(
     "wmname" "clipmenu" "sysbench"	
 	"xdotool" "fastfetch" "ncdu" "pass" 
 	"dialog" "htop" "lsof" 
-	"ly" "xorg" "xorg-init" 
+	"ly" "xorg" "xorg-xinit" 
 	
 )
 
