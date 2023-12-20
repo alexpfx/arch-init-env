@@ -1,6 +1,6 @@
 #!/bin/bash
 pacotes=(
-	"docker" "docker-compose" "docker-buildx" 
+	"docker" "docker-compose" "docker-buildx" "python-pip" "python-pipx" "python" "go" "meld"
 )
 sudo pacman -Sy
 
