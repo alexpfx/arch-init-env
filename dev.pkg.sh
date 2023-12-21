@@ -27,3 +27,17 @@ sudo systemctl enable docker.service
 
 
 sudo usermod -aG docker $USER 
+
+
+mkdir -p /data/git
+
+
+repo=(
+	"go-pass_manager" 
+)
+
+for pk in "${repo[@]}"
+do
+    git clone $pk /data/git/$pk
+done
+gh
