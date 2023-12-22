@@ -37,7 +37,8 @@ repo=(
 )
 
 for pk in "${repo[@]}"
-do
-    git clone $pk /data/git/$pk
+    cmd="git clone https://github.com/alexpfx/$pk.git /data/git/$pk"
+    cd /data/git/$pk
+    make install
 done
 gh
