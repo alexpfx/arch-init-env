@@ -26,9 +26,4 @@ do
     sudo pacman -S -q --needed --noconfirm $pk
 done
 
-<<<<<<< Updated upstream
 sudo chsh -s /bin/fish $USER
-=======
-
->>>>>>> Stashed changes
-
