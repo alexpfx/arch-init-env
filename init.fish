@@ -2,7 +2,7 @@
 
 mkdir -p bin
 fish_add_path $HOME/go/bin
-fish_add_path $HOME/data/ubin
+fish_add_path $HOME/ubin
 fish_add_path $HOME/data/ubin
 cd bin
 fish_add_path (pwd)

@@ -39,4 +39,5 @@ repo=(
 for pk in "${repo[@]}"
 do
     git clone https://github.com/alexpfx/$pk /data/git/$pk
+    (cd /data/git/$pk && make install)
 done
