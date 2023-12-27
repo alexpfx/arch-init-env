@@ -34,4 +34,17 @@ echo "module:/usr/lib/pkcs11/libeToken.so" | sudo tee /etc/pkcs11/modules/eToken
 
 sudo systemctl enable pcscd
 sudo systemctl start pcscd
+cd ~
+mkdir -p .vparams
+gtw=~/.vparams/portal
+user=~/.vparams/user
+group=~/.vparams/group
+crt=~/.vparams/crt
+server_crt=~/.vparams/server_crt
+
+touch $group
+touch $gtw
+touch $user
+touch $crt
+touch $server_crt
 

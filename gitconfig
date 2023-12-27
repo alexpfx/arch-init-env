@@ -1,17 +1,18 @@
 #!/bin/bash
 
 show_yad_form() {
-	form=$(yad --title="Digite seus dados" --form --field="user.name" --field="user.email")
+	form=$(yad --title="Digite seus dados" --form --field="user.name" --field="user.email" --field="github.token")
 
 	nome=$(echo $form | awk 'BEGIN {FS="|" } { print $1 }')
 	email=$(echo $form | awk 'BEGIN {FS="|" } { print $2 }')
+	token=$(echo $form | awk 'BEGIN {FS="|" } { print $3 }')
 }
 
 show_cli_form() {
     read -p "user.name " nome
     read -p "user.email: " email
+    read -p "github.token: " token
 }
-
 
 
 
@@ -23,3 +24,4 @@ fi
 
 git config --global user.name $nome
 git config --global user.email $email
+fish -c "set -Ux GITHUB_TOKEN $token"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/fish
 pacotes=(
 	"docker" "docker-compose" "docker-buildx" "python-pip" "python-pipx" "python" "go" "meld"
 )
@@ -28,8 +28,8 @@ sudo systemctl enable docker.service
 
 sudo usermod -aG docker $USER 
 
+sudo chown -hR $USER:$USER /data
 
-mkdir -p /data/git
 
 
 repo=(
@@ -38,6 +38,7 @@ repo=(
 
 for pk in "${repo[@]}"
 do
-    git clone https://github.com/alexpfx/$pk /data/git/$pk
+	mkdir -p /data/git/$pk
+    git clone https://$GITHUB_TOKEN:$GITHUB_TOKEN@github.com/alexpfx/$pk /data/git/$pk
     (cd /data/git/$pk && make install)
 done
