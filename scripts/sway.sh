@@ -12,5 +12,7 @@ yay -Sy
 for pk in $pacotes
     yay -S -q --needed --noconfirm $pk
 end
-mkdir -p /data/dev/git
+mkdir -p /data/git
 git clone https://github.com/alexpfx/go-dotfiles /data/git/go-dotfiles
+cd /data/git/go-dotfiles
+sudo make
