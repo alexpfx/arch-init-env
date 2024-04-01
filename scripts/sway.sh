@@ -1,18 +1,20 @@
-#!/usr/bin/fish
-set -gx fish_trace 1
+#!/bin/bash
 
-set -l wl_tools "go" "micro" "github-cli"
+# Define a lista de ferramentas
+wl_tools=("go" "micro" "github-cli")
 
-set -l pacotes $wl_tools 
-
+# Instalação dos pacotes
 sudo ls -la
 yay -Sy
 
-# Itera sobre o array e exibe todos os elementos
-for pk in $pacotes
-    yay -S -q --needed --noconfirm $pk
-end
+# Itera sobre a lista de ferramentas e instala cada uma
+for pk in "${wl_tools[@]}"
+do
+    yay -S -q --needed --noconfirm "$pk"
+done
+
+# Clona o repositório e executa o make
 mkdir -p /data/git
 git clone https://github.com/alexpfx/go-dotfiles /data/git/go-dotfiles
 cd /data/git/go-dotfiles
-sudo make
+
