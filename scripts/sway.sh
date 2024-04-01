@@ -1,14 +1,18 @@
 #!/bin/bash
 
 # Define a lista de ferramentas
-wl_tools=("go" "micro" "github-cli")
+tools=("go" "micro" "github-cli")
+sway_tools=("sway" "swaybg" "foot")
+other=("waybar" "wtype" "ydotool" "slurp" "grim" "swappy" "rofi-lbonn-wayland-git" "qt5-wayland" "qt6-wayland" "dunst" "xdg-desktop-portal-wlr")
+
+all_tools=("${tools[@]}" "${sway_tools[@]}" "${other[@]}")
 
 # Instalação dos pacotes
 sudo ls -la
 yay -Sy
 
 # Itera sobre a lista de ferramentas e instala cada uma
-for pk in "${wl_tools[@]}"
+for pk in "${all_tools[@]}"
 do
     yay -S -q --needed --noconfirm "$pk"
 done
