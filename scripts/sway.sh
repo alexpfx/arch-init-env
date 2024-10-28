@@ -2,8 +2,9 @@
 
 # Define a lista de ferramentas
 tools=("go" "micro" "github-cli")
-sway_tools=("sway" "swaybg" "foot")
-other=("waybar" "wtype" "ydotool" "slurp" "grim" "swappy" "rofi-lbonn-wayland-git" "qt5-wayland" "qt6-wayland" "dunst" "xdg-desktop-portal-wlr")
+sway_tools=("sway" "swaybg" "foot" "kitty" "fish")
+other=("waybar" "wtype" "ydotool" "slurp" "grim" "swappy" "rofi-lbonn-wayland-git" "qt6-wayland" "dunst" "xdg-desktop-portal-wlr" "cliphist" "ttf-font-awesome" "sddm" "kwayland5" "eos-sddm-theme" "xorg-xwayland" "wl-clipboard")
+
 
 all_tools=("${tools[@]}" "${sway_tools[@]}" "${other[@]}")
 
